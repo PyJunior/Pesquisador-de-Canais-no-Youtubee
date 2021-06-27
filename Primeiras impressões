@@ -1,0 +1,18 @@
+import pyautogui
+import time
+import pyperclip
+
+print('Bem vindo ao pesquisador Python no Youtube')
+link=('https://www.youtube.com/')
+canal=input('Coloque o canal ou video que voce deseja encontrar: ')
+pyautogui.hotkey('ctrl','t')
+time.sleep(5)
+pyautogui.click(538,50)
+pyperclip.copy(link)
+pyautogui.hotkey('ctrl','v')
+pyautogui.press('enter')
+time.sleep(5)
+pyautogui.click(499,132)
+pyperclip.copy(canal)  
+pyautogui.hotkey('ctrl','v')
+pyautogui.press('enter')      
